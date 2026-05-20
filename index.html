@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>iOS Quiz App</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 16px;
+    background: #f4f4f4;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+.card {
+    background: white;
+    padding: 18px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.answer-btn {
+    background: #ececec;
+}
+.answer-btn:hover {
+    background: #ddd;
+}
+.correct {
+    background: #9be79b !important;
+}
+.wrong {
+    background: #f3a5a5 !important;
+}
+.next-btn {
+    background: #1f7aec;
+    color: white;
+}
+.progress {
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+h1 {
+    text-align: center;
+}
+.quiz-select button {
+    background: #1f7aec;
+    color: white;
+}
+.score {
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>iOS Quiz App</h1>
+    <div id="app"></div>
+</div>
+
+<script src="quizzes.js"></script>
+<script>
+const app = document.getElementById("app");
+
+let currentQuiz = null;
+let flattenedQuestions = [];
+let currentQuestionIndex = 0;
+let score = 0;
+
+function showQuizSelection() {
+    app.innerHTML = `
+        <div class="card">
+            <h2>Válassz egy quizt</h2>
+            <div class="quiz-select">
+                ${quizzes.map((q, i) => `
+                    <button onclick="startQuiz(${i})">
+                        ${q.title || 'Quiz ' + (i+1)}
+                    </button>
+                `).join('')}
+            </div>
+        </div>
+    `;
+}
+
+function startQuiz(index) {
+    currentQuiz = quizzes[index];
+    flattenedQuestions = [];
+
+    currentQuiz.questions.forEach(group => {
+        if(group.questions) {
+            group.questions.forEach(q => {
+                flattenedQuestions.push(q);
+            });
+        }
+    });
+
+    currentQuestionIndex = 0;
+    score = 0;
+
+    showQuestion();
+}
+
+function showQuestion() {
+    if(currentQuestionIndex >= flattenedQuestions.length) {
+        showResults();
+        return;
+    }
+
+    const q = flattenedQuestions[currentQuestionIndex];
+
+    app.innerHTML = `
+        <div class="card">
+            <div class="progress">
+                Kérdés ${currentQuestionIndex + 1} / ${flattenedQuestions.length}
+            </div>
+            <h2>${q.question_text}</h2>
+            <div id="answers">
+                ${q.answers.map((a, i) => `
+                    <button class="answer-btn" onclick="selectAnswer(${i})">
+                        ${a.answer_text}
+                    </button>
+                `).join('')}
+            </div>
+        </div>
+    `;
+}
+
+function selectAnswer(index) {
+    const q = flattenedQuestions[currentQuestionIndex];
+    const buttons = document.querySelectorAll(".answer-btn");
+
+    let correctIndex = q.answers.findIndex(a => parseInt(a.answer_weight) === 100);
+
+    buttons.forEach((btn, i) => {
+        btn.disabled = true;
+
+        if(i === correctIndex) {
+            btn.classList.add("correct");
+        }
+
+        if(i === index && i !== correctIndex) {
+            btn.classList.add("wrong");
+        }
+    });
+
+    if(index === correctIndex) {
+        score++;
+    }
+
+    const nextBtn = document.createElement("button");
+    nextBtn.className = "next-btn";
+    nextBtn.textContent = "Következő";
+    nextBtn.onclick = () => {
+        currentQuestionIndex++;
+        showQuestion();
+    };
+
+    document.getElementById("answers").appendChild(nextBtn);
+}
+
+function showResults() {
+    app.innerHTML = `
+        <div class="card">
+            <div class="score">
+                Eredmény: ${score} / ${flattenedQuestions.length}
+            </div>
+            <button class="next-btn" onclick="showQuizSelection()">
+                Vissza a quiz választóhoz
+            </button>
+        </div>
+    `;
+}
+
+showQuizSelection();
+</script>
+</body>
+</html>

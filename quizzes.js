@@ -1,0 +1,3006 @@
+const quizzes = [
+  {
+    "title": "Quiz 2 iOS",
+    "description": "Olvassátok el a feladatokat és válasszátok ki a megfelelő választ",
+    "questions": [
+      {
+        "type": "question_group",
+        "name": "igaz_hamis",
+        "pick_count": 5,
+        "question_points": 2,
+        "questions": [
+          {
+            "question_name": "Question",
+            "question_text": "Amennyiben lehet, a Swift azt javasolja hogy konstansokat használj. Ezek deklarációja a következő kulcsszóval lehetséges:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "const"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "let"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Ha egy conditional unwrappinget végzünk if ... let-el, akkor ",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "egy másik nem conditional típusú konstans megkapja a conditional értékét "
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "az if feltételébe csak az optional változó nevét kell írni"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Egy for ciklusnál Swiftben:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "az elvégzendő utasításokat kötelező kapcsos zárójelek közé tenni"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "az iteratív határokat kötelező kerek zárójelek közé rakni"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Swiftben lehetséges olyan függvény amely egy másik függvényt térít vissza",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Nem lehetséges, pointert kellene átadni"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "Lehetséges, úgy kell megadni a visszatérítési típust hogy az függvény lesz"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Swift függvények esetén lehetséges olyan bemeneti paraméter amely meghatározatlan számú",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Igen, bármelyik, csak a megfelelő nevet kell megadni neki"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "Igen, de csak az utolsó paramétere lehet ilyen egy függvénynek"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Ez egy példa az implicit typecastingre:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "var a:Int = 20"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "var a = 20"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Ez egy példa az explicit typecastingre:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "var a:Double = 20"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "var a = 20.0"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "A ?? operátort a következő képpen kell használni:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "a ?? b azt jelenti hogy az a változó felveszi a b értékét ha az nem nil"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "a ?? b visszatéríti az a értékét ha az nem nil, máskülönben a b értékét"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "A while ciklus esetén Swiftben:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "az utasításokat közrefogó kapcsos zárójelek kötelezőek"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "a feltételt közrefogó kerek zárójel kötelező"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Hogy tudja megkülönböztetni a Swift az azonos nevű, de más paraméterekkel meghívott függvényeket?",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Nem lehet azonos nevű függvénynek más és más implementációja"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "A paraméterek neve alapján"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Hogy tud egy függvény több értéket visszatérteni Swiftben?",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "Tuple-t térít vissza, ebben több változó is lehet"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "muszáj cím szerint hivatkozni rájuk és direkt be kell állítsa az értéküket"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Mit jelent a force unwrapping és mikor használjuk?",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Amikor át kell alakítani egy tömböt egy lineáris vektorrá"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "Amikor át kell alakítani egy optional változót az értékére"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Egy olyan függvény részletet aminek nincs neve és a jelenlegi kontextust kapja meg, úgy hívjuk hogy:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Helper function"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "Closure"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Egy Switch esetén Swiftben:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "A switch exhaustive kell legyen tehát le kell fedje az összes lehetőséget"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Mindig kötelezően kell legyen egy default ág"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Quiz 3 iOS Swift continued",
+    "description": "Olvassátok el a feladatokat és válasszátok ki a megfelelő választ",
+    "questions": [
+      {
+        "type": "question_group",
+        "name": "igaz_hamis",
+        "pick_count": 5,
+        "question_points": 1,
+        "questions": [
+          {
+            "question_name": "Question",
+            "question_text": "Egy osztály változóit",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "parameters-nek hívjuk",
+                "answer_weight": "0",
+                "answer_text": "const"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "property-nek hívjuk"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Ha a subclass felülírja a parent class egy metódusát",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "akkor oda kell írni azt a kulcsszót hogy override"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "akkor oda kell írni azt a kulcsszót hogy redefine"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Egy osztály összes paraméterét inicializálni kell",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "deklarációkor, a konstruktorban vagy nil típusúnak kell deklarálni"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "a konstruktorban, kötelező módon"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "A struktúráknak ",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "is kell írni kötelező módon egy init() függvényt"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "létezik egy beépített init függvénye amit nem kell megírni"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Egy osztálynak lehet",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Több init függvénye, akár több designated init()-je is"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "Több convenience init függvénye, de csak egy designated init() függvénye"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Inicializáláskor ",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "a superclass init()jét kell meghívni először"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "a saját változókat kell beállítani először"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Inicializáláskor ",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "a super.init()-je után kell átállítani az örökölt property-ket"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "a super.init()-je előtt kell átállítani az örökölt property-ket"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "A deinit() akkor hívódik meg amikor",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "egy instanciára való minden hivatkozás törlődik"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "egy instanciára való minden hivatkozás törlődik vagy weak"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Egy osztály konstans property-jének amit let-el definiáltunk",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "az init függvény képes megváltoztatni az értékét, mert az init kivétel"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "az init függvény nem képes megváltoztatni az értékét, mert ez egy konstans"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Egy convenience initializer",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "kötelezően kell inicializáljon minden paramétert"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "kötelezően meg kell hívja a designated initializert"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Melyik függvény hívódik meg akkor amielőtt egy értéket beállítanánk?",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "willSet()"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "willGet()"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Milyen értéket térít vissza egy (rawValue: ) enum initializer",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "az értéknek megfelelő case-t, ha a case kilép az intervallumból akkor az elsőt"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "az értéknek megfelelő case-t optionalként, ha a case kilép az intervallumból akkor nilt"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Rekurzív init() függvények elé oda kell írni azt hogy:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "recursive"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "indirect"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Egy delegált",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "elvégez bizonyos feladatokat és általában kell konformálódjon egy protokollhoz"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "nem lehet optional és nil"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Quiz 4 iOS UIKit",
+    "description": "Olvassátok el a feladatokat és válasszátok ki a megfelelő választ",
+    "questions": [
+      {
+        "type": "question_group",
+        "name": "igaz_hamis",
+        "pick_count": 5,
+        "question_points": 2,
+        "questions": [
+          {
+            "question_name": "Question",
+            "question_text": "Egy UIView",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "parameters-nek hívjuk",
+                "answer_weight": "0",
+                "answer_text": "az egész screent jelenti amire az elemek kerülnek"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "egy kis téglalap amiből minden más elemet származtatnak"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Az UIStackView",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "sok elemet tud egymás mellé rendezni egy sorban vagy egy oszlopban"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "egy verem struktúrát valósít meg amiből poppolni lehet a view-okat"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "A UILabel",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "egy statikus szöveg megjelenítésére szolgál a képernyőn"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "egy címkét ad hozzá egy elemhez amivel hivatkozni lehet rá"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "A UITextView",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "egy statikus szöveget jelenít meg csak olvasásra"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "egy editálható user input szöveg bevitelre"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "A UISwitch",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "egy Int értéket térít vissza 0 vagy 1 értékkel"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "egy boolean értéket térít vissza true vagy false értékkel"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Az UISlider",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Mindig egy 0 és 100 közötti értéket térít vissza"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "Képes diszkrét lépésekben is menni"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Egy UIDatePickerben be lehet állítani",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "egy dátumot, egy időpontot vagy egy countdown timert"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "csak egy dátumot és a hozzá tartozó időpontot"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "AZ UIIMage view",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "felhozza a Photosból a beilleszthető képeket"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "képes inicializálni a tartalmát a kép neve alapján"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Az UIStackView",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "képes függőlegesen vagy vízszintesen is egymás mellé helyezni a tartalmat"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "nem helyezhető egy másik UIStackView-be"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Egy UIBotton",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "csak azt az eseményt tudja lekezelni ha lenyomják"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "több eseményt is tud kezelni: a gomb lenyomását, elengedését stb."
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Ez egy egysoros text mező:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "UITextField"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "UITextView"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Ez egy több soros text mező:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "UITextField"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "UITextView"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "A UIPickerview-nek",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "fel kell tölteni a választási lehetőségeit inicializáláskor"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "van egy Data Source delegátja ami feltölti adatokkal"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "A UIControl",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "egy alap osztály amelyből minden más kontroll viewt származtatnak"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "egy mozgatható kurzort ad a képernyőn"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Quiz 5 iOS Layout",
+    "description": "Olvassátok el a feladatokat és válasszátok ki a megfelelő választ",
+    "questions": [
+      {
+        "type": "question_group",
+        "name": "igaz_hamis",
+        "pick_count": 5,
+        "question_points": 2,
+        "questions": [
+          {
+            "question_name": "Question",
+            "question_text": "A layout",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "parameters-nek hívjuk",
+                "answer_weight": "0",
+                "answer_text": "egy terv az app megvalósítására"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "az elemek elrendezését jelenti a képernyőn"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "A külső layout változás az amikor:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "elforgatják a képernyőt vagy pl split screen módba teszik az appet ipaden"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "megváltoztatják a betűméretet (accessibility) vagy átállítják az app nyelvét"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "A belső layout változás az amikor:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "megváltoztatják a betűméretet (accessibility) vagy átállítják az app nyelvét"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "elforgatják a képernyőt vagy pl split screen módba teszik az appet ipaden"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Egy point:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Egy szubpixel elem, a piros a kék vagy a zöld része a pixelnek"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "Mindig nagyobb mint egy pixel, lehet 1,4 vagy 9 pixel is"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Egy constraint egyenlete a következő:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "elem1.tulajdonság = szorzó * elem2.tulajdonság ^ kitevő + konstans"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "elem1.tulajdonság = szorzó * elem2.tulajdonság + konstans"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "A UIStackView",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Navigációt valósít meg, mindig lehet poppolni az utolsó viewt a tetejéről"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "Elemeket helyez el egymás mellé egy sorban vagy egy oszlopban"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Egy layoutot fel lehet építeni:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "Programatikusan, Autoresizing-el vagy AutoLayout-al"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Programatikusan vagy AutoLayout-al"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Ezek a size classek léteznek:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Small és Large"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "Regular, Compact és Unspecified"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Ugyanazon eszközön:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "Lehetséges Compact size class egy irányba (pl x) és Regular a másik irányba (pl y)"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Nem lehetséges az hogy két különböző size class létezzen egyszerre"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Autoresizing esetén",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "A child view tud igazodni a parent view-hoz, és a parent is tud igazodni a child-hoz"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "Csak a child view tud igazodni a parent view-hoz, fordítva nem lehetséges"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Autolayout esetén:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "A child view tud igazodni a parent view-hoz, és a parent is tud igazodni a child-hoz"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Csak a child view tud igazodni a parent view-hoz, fordítva nem lehetséges"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Az autolayout egy algebrai egyenletrendszert határoz meg, amiben:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Kevesebb feltételt kell megadni mint ahány tulajdonságot be akarunk állítani"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "Ugyanannyi vagy több feltételt kell megadni mint ahány tulajdonságot be akarunk állítani"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Az autolayout lgebrai egyenletrendszere így védi ki azt hogy overconstrained legyen:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "a compiler ellenőrzi azt hogy hány egyenlet van és hibát ad ha túl sok megszorítás van"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "prioritások vannak és a legalacsonyabb prioritású megszorításokat elhagyja"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Mi az amit be kell állítani ahhoz hogy az Autolayout működjön:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "elem.translatesAutoresizingMaskIntoConstraints = false"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "elem.NSLayoutConstraints.activateAutoLayout = true"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Quiz 6 iOS TableView",
+    "description": "Olvassátok el a feladatokat és válasszátok ki a megfelelő választ",
+    "questions": [
+      {
+        "type": "question_group",
+        "name": "igaz_hamis",
+        "pick_count": 5,
+        "question_points": 2,
+        "questions": [
+          {
+            "question_name": "Question",
+            "question_text": "Az UITableView",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "-ból származtatjuk a UIScrollView-t"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "a UIScrollView-ból van származtatva"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Az UITableView:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "függőleges irányban scrollozható"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "mindkét irányban scrollozható"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "A Settings app:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "a grouped TableView stílust használja"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "a plain TableView stílust használja"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Szeretnék kérni egy újrahasznosított cellát, az adott cella típusában:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "let cell = tableView.dequeueReusableCellWithIdentifier(\"celltype\",forIndexPath: indexPath) as? UITableViewCell"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "let cell = tableView.dequeueReusableCellWithIdentifier(\"celltype\",forIndexPath: indexPath) as! UITableViewCell"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Ha nem sikerül kérjünk egy cellát a dequeueReusableCellWithIdentifier-el",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "ez mindig sikerülni fog, nem lehetséges ilyen"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "akkor instanciálunk mi egyet abban a típusban"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "egy UITableViewDataSource kötelező módon kell implementálja:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "a függvényeket amik visszaadják hogy hány sectionje és hány sora van a TableView-nek illetve visszaadnak egy adott cellát"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "a függvényeket amik visszaadják hogy hány sora van a TableView-nek illetve visszaadnak egy adott cellát"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "A UICollectionView:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "Olyan mint a UITableView csak flexibiis méretű rácsot valósít meg x és y irányba"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Olyan mint a UITableView csak egy uniform rácsot valósít meg x és y irányba"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Példák olyan appekre amelyek UITableView-el vannak felépítve:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Settings, Contacts, Photos"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "Alarm oldal a Clock-ban, Instagram, Facebook"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Miért kell regisztrálni a cella típusát?",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "Azért hogy a dequeueReusableCellWithIdentifier-től lehessen olyan típusú cellát kérni"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Azért hogy a compiler leellenőrizze azt hogy jól definiáltuk-e a cella típust"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "let cell = tableView.dequeueReusableCellWithIdentifier(\"celltype\",forIndexPath: indexPath) as! UITableViewCell",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "compile time-kor ellenőrzi hogy helyes-e a cella típusa"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "crashelheti a programot ha nem regisztráltuk azt a cellatípust"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Az UITableView delegate:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "semmit nem kell kötelező módon implementáljon"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "kötelező módon kell implementálja azt hogy mi történik ha egy sorra tappelünk illetve ha kitöröljük"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Az NSIndexPath",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "1 based azaz egytől indít az első cellának"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "magában foglalja a section és a sor számát is a cellának"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "A custom height-et a sornak:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "a UITableViewDataSource adja meg"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "a UITableViewDelegate adja meg"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Egy UICollectionViewDataSource kötelező módon ezeket kell implementálja:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "collectionView(_:numberOfItemsInSection:) és collectionView(_:cellForItemAt:) függvényeket"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "semmit nem kell kötelezően implementáljon"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Quiz 7 iOS Navigáció",
+    "description": "Olvassátok el a feladatokat és válasszátok ki a megfelelő választ",
+    "questions": [
+      {
+        "type": "question_group",
+        "name": "igaz_hamis",
+        "pick_count": 5,
+        "question_points": 2,
+        "questions": [
+          {
+            "question_name": "Question",
+            "question_text": "Egy hierarchikus navigációban",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "tetszőleges átmenetek lehetségesek különböző view-k között"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "egy fa szerkezetben tudjuk bejárni a lehetséges view-okat"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Milyen vizuális elemmel segít a UINavigationController abban hogy tudjam hol vagyok a hierarchiában:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "A UINavigationBar-ban mutatja hogy hova tudok visszalépni, milyen nevű view-ra és mutatja a jelenlegi view nevét"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "A UINavigationBar-ban mutatja hogy milyen mélyen vagyok a hierarchiában, hányadik szinten"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Egy storyboardban amikr összekötök két viewt egy átmenettel, ennek a neve az hogy:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "segue (és úgy ejtik ki mint a segway-t)"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "transition"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Egy storyboardban úgy tudunk hozzáadni egy view-hez egy UINavgiationControllert, hogy:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "a + gombbal mint egy elemet hozzáadjuk a jelenlegi view-hez"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "a menüben kiválasztjuk azt hogy Embed in: Navigation Controller"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Milyen új elem jelenik meg egy view-ban attól hogy ő egy Navigation Controllerben van",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Egy Tab Bar az alján a viewnek"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "egy Navigation Bar a tetején a view-nek"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Milyen új elem jelenik meg egy view-ban attól hogy ő egy Tab Bar Controllerben van",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "egy Navigation Bar a tetején a view-nek"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "egy Tab Bar az alján a viewnek"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Egy storyboardban úgy tudunk hozzáadni egy view-hez egy UITabBarControllert, hogy:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "a menüben kiválasztjuk azt hogy Embed in: Tab Bar Controller"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "a + gombbal mint egy elemet hozzáadjuk a jelenlegi view-hez"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Egy UITabBarController esetén:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "egy fa szerkezetben tudjuk bejárni a lehetséges view-okat"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "egyből át tudunk menni bármelyik view-ról bármelyikre, mert flat hierarchia van"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Egy view életciklusában van egy olyan belépési pont hogy viewDidLoad(). Mire használjuk ezt a pontot?",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "Arra hogy felépítsük a UI-t, hozzáadjuk az elemeket és a köztük levő layoutot"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Arra hogy megjelenítsünk egy átmeneti animációt mielőtt a view eltűnne"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Egy view életciklusában van egy olyan belépési pont hogy viewWillDisappear(). Mire használjuk ezt a pontot?",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Arra hogy felépítsük a UI-t, hozzáadjuk az elemeket és a köztük levő layoutot"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "Arra hogy megjelenítsünk egy átmeneti animációt mielőtt a view eltűnne"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Egy storyboardban létrehozott UI elem tulajdonságaira a kódban levő hivatkozást a következő kulcsszó jelzi:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "@IBOutlet"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "@IBAction"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Egy storyboardban létrehozott UI elem eventjére a kódban levő hivatkozást a következő kulcsszó jelzi:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "@IBOutlet"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "@IBAction"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Milyen adatstruktúrában tárolja a view-eket egy UINavigationController? Mi a kötelező ezekre nézve?",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Egy arrayben. Az hogy legyen beállítva melyik a default."
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "Egy stackben. Az, hogy legyen legalább egy benne."
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Milyen adatstruktúrában tárolja a view-eket egy UITabBarController? Mi a kötelező ezekre nézve?",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "Egy arrayben. Az hogy legyen beállítva melyik a default."
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Egy stackben. Az, hogy legyen legalább egy benne."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Quiz 8 iOS Persistence",
+    "description": "Olvassátok el a feladatokat és válasszátok ki a megfelelő választ",
+    "questions": [
+      {
+        "type": "question_group",
+        "name": "igaz_hamis",
+        "pick_count": 5,
+        "question_points": 2,
+        "questions": [
+          {
+            "question_name": "Question",
+            "question_text": "A Userdefaults",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "alkalmas sok adat tárolására"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "betöltődik az app indulásakor"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Egy app beállításai(t) az Userdefaultsban",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "be lehet úgy állítani hogy több appon keresztül is megjelenjenek illetve hogy több felhasználónál is ugyanazok legyenek"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "minden egyes letöltött appnél személyesek és csak azon a telefonon és abban az appben érvényesek"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Amikor megváltoznak az Usedefaults-ok",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "erről értesítést tud kapni az app más része is ha fel van iratkozva bizonyos eseményekre"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "a rendszer leellenőrzi hogy helyes kulcsot adtunk meg és nem-e ír felül egy már beállított értéket"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Az Userdefaultsban megadott kulcsokat",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "a compiler leellenőrzi compile time-ban és figyelmeztet a hibás kulcsokra"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "biztonságosabb egy wrapperrel kezelni és konstansként megadni őket hogy legyen valamilyen ellenőrzés compile time-ban"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Az Userdefaults írásakor:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "javasolt az hogy direktbe írjunk a plist állományba ami ezeket tartalmazza"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "jobb a megadott függvényekkel írni mert ezek thread safe függvények"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "A thread safe viselkedés",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "az Userdefaultsban van implementálva, a Keychainben nincs"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "úgy az Userdefaultsban mint a Keychainben implementálva van"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "A Keychain",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "nehezen unit test-elhető"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "egy barátságos API ami könnyen használható wrapperek nélkül"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Titkosított adatokat:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "csak a Keychainbe szabad elmenteni"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "a Keychainbe javasolt elmenteni, kivéve ha nagy méretű adatokról van szó, ekkor a Core Data-ba"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Egy Keychainben már eltárolt password felülírására a",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "SecItemUpdate függvényt javasolt használni"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "SecItemAdd függvényt javasolt használni"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "A canEvaluatePolicy()",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "képes visszatéríteni egy LAPolicy értéket amiből kiolvasható hogy milyen azonosításra képes az eszköz"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "visszaad egy true vagy false értéket annak megfelelően hogy az illető LAPolicy azonosítás használható-e az eszközön"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "A Core Databan",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "az adatokat kell kódoljuk és dekódoljuk a Codable protokoll szerint"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "szintén biztosítva van a thread safe viselkedés"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Az SQLite előnye az hogy",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "egyszerre több helyről is lehet írni az adatbázisunkat és thread safe"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "gyors ás nem igényel külön installálást"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Milyen típusú változók lehetnek Codable típusok?",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Azok amelyekhez megírjuk a megfelelő függvényeket egy extensionben"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "Minden típus alapból Codable"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Minden hozzáférést olyan eszközhöz ami a privacy-hoz tartozik",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "Be kell írni az info.plist állományba és meg kell indokolni az Apple Store-nak mielőtt kiadjuk az appet"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "alapból beállíthatunk a user megkérdezése nélkül, csak kell jelezzük neki az Control Centerben egy Information Icon-al"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Quiz 9 iOS Networking",
+    "description": "Olvassátok el a feladatokat és válasszátok ki a megfelelő választ",
+    "questions": [
+      {
+        "type": "question_group",
+        "name": "igaz_hamis",
+        "pick_count": 5,
+        "question_points": 2,
+        "questions": [
+          {
+            "question_name": "Question",
+            "question_text": "A networking egyik szabálya:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Az összes fontos adatot átküldeni egy háttértárba, mert van elég bandwidth és tárhely is van a cloudban"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "Csak annyi adatot átküldeni amennyire szükség van"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "A networking egyik szabálya:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "Az hogy elkerülje a timoeoutokat, ha lehetséges"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "tegyen timeoutokat minden network híváshoz és adjon lehetőséget a usernek újra lekérni az adatot ha timeout történt"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "A networking egyik szabálya:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "adja meg a lehetőséget a usernek hogy megállítsa a letöltést ha túl sok időt vesz igénybe az"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "háttérbe töltse le az adatokat és mindig resume-olja a letöltést ha az megszakadt"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "A networking egyik szabálya:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Tételezze fel hogy a network elérhető és követelje meg ezt a usertől ahhoz hogy az app betöltődhessen"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "Kezelje le a network hibákat megfelelő módon, felkészülve minden lehetőségre"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "A networking egyik szabálya:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Amikor lassú a network szakítsa meg a letöltéseket és várja meg amíg megint gyors lesz a network"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "Amikor lassú a network, akkor töltsön be alacsonyabb minőségű videókat és képeket"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "A networking egyik szabálya:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Kötelező módon használja a beépített APIt mert az biztos támogatva lesz a jövőben is"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "Használjon egy megfelelő APIt ami könnyűvé teszi a networking feladatokat"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "A networking használatakor tartsuk észben, hogy:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "lehet hogy a usernek épp mosz nincs network hozzáférése vagy drága számára a net elérhetőség"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "a user bejelentkezéskor mindig akar valami friss netről letöltődő animációt látni és a legfrissebb dolgokat betöltve az adabázisból"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "A network hívások:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "ma már gyorsan történnek a fő szálban lehet hívni őket mert csak kis ideig kell emiatt várjon a user"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "aszinkron módon kell történjenek egy háttérszálon, nem akadályozva az UI interaktivitását"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Networking APIk közül:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "A közép szinten levő Netwrok APIkat javasolt használni, NSURL, NSURLSession, NSURLRequest stb"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "az alacsony szintű hívásokat javasolt használni (low level socket APIs)"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Az URLRequest:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "nagyon részletesen konfigurálható egy URLSessionConfiguration objektumon keresztül"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "tartalmaz egy URLt, egy cachePolicy-t, timeoutIntervalt, egy URLt, egy pár más beállítást a lekéréshez"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "A JSON formátummal könnyű dolgozni:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "mert beépített egy Codable protokoll ami minden lehetséges típusra már érvényes"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "mert könnyen addelhetünk egy külső APIt ami Codable-vá teszi a létező típusokat"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "A CodingKeys az egy enum ami:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "megad egy sor titkosítási kulcsot ahhoz hogy az adatot biztonságosan tudjuk lementeni"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "lehetővé teszi hogy megfeleltessük a lekért JSONban levő kulcsokat az adatmodellünkben levő kulcsoknak"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "az NSAppTransportSecurity",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "az adatcsomagok titkosításával, enkriptálásával és dekriptálásával foglalkozik"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "lehetővé teszi azt hogy beállítsunk kivételeket, pl olyan site-okat ahonnan http kérés megengedett"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Egy HTTP kérésre adott válasz esetén a 200as status kód:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "egy jó dolog, sikerült a lekérés"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "egy hibajelzés, jelzi azt, hogy nem sikerült elérni a megadott útvonalat"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Quiz 10 iOS Architektúra",
+    "description": "Olvassátok el a feladatokat és válasszátok ki a megfelelő választ",
+    "questions": [
+      {
+        "type": "question_group",
+        "name": "igaz_hamis",
+        "pick_count": 5,
+        "question_points": 2,
+        "questions": [
+          {
+            "question_name": "Question",
+            "question_text": "Az MVC architektúrában:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Van egy Model egy Controller és egy View és bármelyik ezek közül tud kommunikálni a többivel"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "Van egy Model és egy View és egy Controller ami összeköti ezeket, ez a központi rész"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "MVC: amikor a Controller változtatást végez a Model-en akkor:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "Update-t végez a Model adatain"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Notificationt küld a Modellnek ami alapján majd a Modell lekéri a változtatásokat"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "MVC: amikor a Controller változtatást végez a View-en akkor:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "Update-t végez a View komponensein amelyek az új adatoknak megfelelően fognak kinézni"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Notificationt küld a View-nek ami alapján majd a View lekéri majd a változtatásokat"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "MVC: amikor a View közölni akar információt a Controler-el, akkor:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Felülírja a Controler-ben a megfelelő adatmezőket az új adatokkal"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "Ez egy User Action, mivel a View ezeket fogadja és továbbítja a Controler-nek hogy egy ilyen input történt"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "MVC: amikor a Model közölni akar egy változást a Controler-el, akkor:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Felülírja a Controler-ben a megfelelő adatmezőket az új adatokkal"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "Ez egy Notification, értesíti a Controler-t hogy az adat megváltozott"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "MVC: egy telefonkönyv applikációban a View feladata:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Minden vizuális elem kezelése és a kontakt listában a hozzáadás és a törlés"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "Minden vizuális elem kezelése"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "MVVM: egy telefonkönyv applikációban a ViewModel feladata:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "A kontaktok listájának karbantartása, frissítése, törlése, hozzáádása, illetve a telefonhívások indítása"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "A kontaktok listájához tartozó vizuális elemek karbantartása, frissítése és megjelenítése a képernyőn"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Az MVVMben az MVChez képest:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "elérjük a Controler és a Model jobb szétválasztását"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "elérjük a Controler és a View jobb szétválasztását"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Az MVVMben az MVChez képest:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "könnyebben tesztelhető és újrahasznosítható komponenseket kapunk"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "kevesebb kódot kell írni, kevesebb állomány van és kevesebb boilerplate code"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "MVVM: amikor a ViewModel fel kell frissítse a View-ben levő elemeket",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Update-t végez a View komponensein amelyek az új adatoknak megfelelően fognak kinézni"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "akkor ezek frissülnek mivel mind Binding-ben vannak azokkal az adattagokkal amelyek őket leírják a ViewModel-ben"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Az MVVMben a business logic:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "a ViewModel-ben van"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "a Model-ben van beépítve"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Az MVVMben a user actionoket:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "a View fogja lekezelni értelmezni és a megfelelő változtatásokat elvégezni"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "a ViewModel fogja értelmezni és a megfelelő változtatásokat elvégezni"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Az MVVM + FlowController ",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "megoldja a Navigáció különválasztását a View-tól"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "megoldja a Navigáció különválasztását a ViewModel-tól"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Az Apple által javasolt architektúra az:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "MVC"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "MVVM + FlowController"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Quiz 12 iOS Permissions",
+    "description": "Olvassátok el a feladatokat és válasszátok ki a megfelelő választ",
+    "questions": [
+      {
+        "type": "question_group",
+        "name": "igaz_hamis",
+        "pick_count": 5,
+        "question_points": 2,
+        "questions": [
+          {
+            "question_name": "Question",
+            "question_text": "Az hogy az engedélyt kérjen az app a protected resurces használatára:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "egy best coding practice"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "egy kötelező lépés amit az iOS fog megtenni az app első ilyen hozzáférés kérésekor"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Ha egyszer megadtunk egy ilyen hozzáférést egy protected resurce-re:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "az app megjegyzi ezt és nem fogja újra kérni"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "minden alkalommal újra kell engedélyezni"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Ha egyszer megadtunk egy ilyen hozzáférést egy protected resurce-re:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "mindig be lehet menni a Settingsbe és vissza lehet vonni ezt az engedélyezést"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "újra kell installálni az appet hogy megváltoztassuk a beállításokat"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Ha egyszer megadtunk egy always on hozzáférést a location-re:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "az app megjegyzi ezt és nem fogja újra kérdezni"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "mivel túl permissive-nek tartja, az iOS erre még rá fog kérdezni egyszer majd"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "A purpose string",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "tudatja a userrel hogy milyen resource-hez kérünk hozzáférést"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "tudatja a userrel hogy miért kérünk hozzáférést a resource-hez és ez által számára mi lesz elérhető"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "A protected resurce hozzáférést:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "automatikusan ellenőrzi az iOS az alapján hogy mit használ az app"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "be kell állítsunk mi egy leírást a Property List állományban"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Ha nincs megadva a purpose string a protected resurce hozzáféréshez:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "futás közben fog crashelni az app"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Hibát fog adni a compiler"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Amikor egy adott idő után egy notificationt akarok majd küldeni:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "akkor az Apple Push Notification Servicet kell használjam"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "akkor erre használható a local notification is"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Amikor ki akarok küldeni egy értesítést hogy új termékek érkeztek a webáruházba:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "akkor az Apple Push Notification Servicet kell használjam"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "akkor erre használható a local notification is"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "A Core location által adott helymeghatározás:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Pontosabb kinn a városból ahol jobb a GPS jel"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "Pontosabb egy városban ahol több telefontorony, wifi stb van"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Quiz 11 iOS SwiftUI",
+    "description": "Olvassátok el a feladatokat és válasszátok ki a megfelelő választ",
+    "questions": [
+      {
+        "type": "question_group",
+        "name": "igaz_hamis",
+        "pick_count": 5,
+        "question_points": 2,
+        "questions": [
+          {
+            "question_name": "Question",
+            "question_text": "ASwiftUI:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "imperatív"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "deklaratív"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "A SwiftUIban:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "egységesen lehet fejleszteni minden platformra"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "külön kell fejleszteni iOS, ipadOS, watchOS-re"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "SwiftUIban egy külső event így kacsolódik egy Actionhoz:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "egy Publisher azaz értesítést küld arról hogy valami történt"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "egy Mutation-t hajt végre a megfelelő belső state-n"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "SwiftUIban egy Action event így kacsolódik egy State-hez:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "egy Publisher azaz értesítést küld arról hogy valami történt, a State meg figyeli ezeket"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "egy Mutation-t hajt végre a megfelelő belső state-n, mivel own-olja azt"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "SwiftUIban egy State így kacsolódik a View-hez:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Ez egy Mutation, a State megválzotatja a View állapotát"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "Ez egy Update, amikor a State megváltozik akkor a View tudja hogy Update-olni kell"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Amikor egy Value Type-t akarok, Read Only módban akkor erre a jó megoldás:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "@State"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "Regular Property"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Amikor egy Value Type-t akarok, Read és Write módban akkor erre a jó megoldás:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "hogyha ezt csak helyben használom, akkor @State"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Regular Property"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Amikor egy Value Type-t akarok, Read és Write módban akkor erre a jó megoldás:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "@Notification mert erre kell figyeljen a belső state"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "ha ezt az értéket kívülről kapom, akkor @Binding"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Amikor egy Object Type-t akarok, és paraméterként kapom meg az objektumban:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "@ObservedObject mert erre kell figyeljen az én objektumom"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "@StateObject mert nem lehet sima @State mivel objektum volt"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Amikor egy Object Type-t akarok, és maga a view hozza ezt létre, akkor erre a jó megoldás:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "@ViewObject"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "@StateObject"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Amikor egy Object Type-t akarok, és az Environmentből kapja meg a View ezt, akkor ez egy:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "@EnvironmentObject"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "@BindingObject"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "SwiftUIban amikor egy új projektet kezdek, akkor deklaráva van:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "egy class ami UIViewController"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "egy struct ami konformálódik a View protocol-hoz"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "SwiftUI-ban a Previewben:",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "csak bemutatja azt hogy mit eredményez a kód, Live módban frissítve"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "át lehet állítani Live módból Inspector módba ahol Storyboardhoz hasonlóan lehet a UIt szerkeszteni benne"
+              }
+            ]
+          },
+          {
+            "question_name": "Question",
+            "question_text": "Szükséges-e egy ma kezdő iOS fejlesztőnek ismerni a UIKit-et hogyha már létezik a SwiftUI?",
+            "question_type": "true_false_question",
+            "answers": [
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "100",
+                "answer_text": "Ma még igen, mert még nem mindent lehet megoldani SwiftUIban"
+              },
+              {
+                "answer_precision": "10",
+                "numerical_answer_type": "exact_answer",
+                "answer_weight": "0",
+                "answer_text": "Nem, ez már csak egy legacy módja a UI fejlesztésnek"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+];
