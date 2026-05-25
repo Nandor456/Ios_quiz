@@ -72,10 +72,10 @@ h1 {
     <div id="app"></div>
 </div>
 
-<script src="quizzes.js"></script>
+<script src="./quizzes.js"></script>
 <script>
 const app = document.getElementById("app");
-const quizCollection = Array.isArray(window.quizzes) ? window.quizzes : [];
+let quizCollection = Array.isArray(window.quizzes) ? window.quizzes : [];
 
 let currentQuiz = null;
 let flattenedQuestions = [];
@@ -94,10 +94,14 @@ function getFlattenedQuestions(quiz) {
 
 function showQuizSelection() {
     if (quizCollection.length === 0) {
+        const message = window.location.protocol === "file:"
+            ? "Futtasd a <code>node generate-quizzes.js</code> parancsot, hogy a JSON fájlokból frissüljön a <code>quizzes.js</code>."
+            : "A kvizek nem töltődtek be. GitHub Pages esetén ez általában cache vagy deploy probléma. Frissíts rá hard refreshsel, és ellenőrizd, hogy a generált <code>quizzes.js</code> fel van pusholva.";
+
         app.innerHTML = `
             <div class="card">
                 <h2>Nincsenek betöltött kvizek</h2>
-                <p>Futtasd a <code>node generate-quizzes.js</code> parancsot, hogy a JSON fájlokból frissüljön a <code>quizzes.js</code>.</p>
+                <p>${message}</p>
             </div>
         `;
         return;
@@ -198,7 +202,37 @@ function showResults() {
     `;
 }
 
-showQuizSelection();
+async function loadQuizzesFallback() {
+    if (quizCollection.length > 0 || window.location.protocol === "file:") {
+        return;
+    }
+
+    try {
+        const response = await fetch(`./quizzes.js?v=${Date.now()}`, {
+            cache: "no-store"
+        });
+
+        if (!response.ok) {
+            throw new Error(`quizzes.js letöltés sikertelen: ${response.status}`);
+        }
+
+        const scriptSource = await response.text();
+        window.Function(scriptSource)();
+
+        if (Array.isArray(window.quizzes)) {
+            quizCollection = window.quizzes;
+        }
+    } catch (error) {
+        console.error("Fallback quiz load failed:", error);
+    }
+}
+
+async function initializeApp() {
+    await loadQuizzesFallback();
+    showQuizSelection();
+}
+
+initializeApp();
 </script>
 </body>
 </html>
