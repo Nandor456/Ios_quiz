@@ -1,0 +1,281 @@
+{
+    "title": "Quiz 9 iOS Networking",
+    "description": "Olvassátok el a feladatokat és válasszátok ki a megfelelő választ",
+    "questions": [
+        {
+            "type": "question_group",
+            "name": "igaz_hamis",
+            "pick_count": 5,
+            "question_points": 2,
+            "questions": [
+                {
+                    "question_name": "Question",
+                    "question_text": "A networking egyik szabálya:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "Az összes fontos adatot átküldeni egy háttértárba, mert van elég bandwidth és tárhely is van a cloudban"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "Csak annyi adatot átküldeni amennyire szükség van"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "A networking egyik szabálya:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "Az hogy elkerülje a timoeoutokat, ha lehetséges"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "tegyen timeoutokat minden network híváshoz és adjon lehetőséget a usernek újra lekérni az adatot ha timeout történt"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "A networking egyik szabálya:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "adja meg a lehetőséget a usernek hogy megállítsa a letöltést ha túl sok időt vesz igénybe az"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "háttérbe töltse le az adatokat és mindig resume-olja a letöltést ha az megszakadt"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "A networking egyik szabálya:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "Tételezze fel hogy a network elérhető és követelje meg ezt a usertől ahhoz hogy az app betöltődhessen"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "Kezelje le a network hibákat megfelelő módon, felkészülve minden lehetőségre"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "A networking egyik szabálya:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "Amikor lassú a network szakítsa meg a letöltéseket és várja meg amíg megint gyors lesz a network"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "Amikor lassú a network, akkor töltsön be alacsonyabb minőségű videókat és képeket"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "A networking egyik szabálya:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "Kötelező módon használja a beépített APIt mert az biztos támogatva lesz a jövőben is"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "Használjon egy megfelelő APIt ami könnyűvé teszi a networking feladatokat"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "A networking használatakor tartsuk észben, hogy:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "lehet hogy a usernek épp mosz nincs network hozzáférése vagy drága számára a net elérhetőség"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "a user bejelentkezéskor mindig akar valami friss netről letöltődő animációt látni és a legfrissebb dolgokat betöltve az adabázisból"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "A network hívások:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "ma már gyorsan történnek a fő szálban lehet hívni őket mert csak kis ideig kell emiatt várjon a user"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "aszinkron módon kell történjenek egy háttérszálon, nem akadályozva az UI interaktivitását"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Networking APIk közül:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "A közép szinten levő Netwrok APIkat javasolt használni, NSURL, NSURLSession, NSURLRequest stb"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "az alacsony szintű hívásokat javasolt használni (low level socket APIs)"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Az URLRequest:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "nagyon részletesen konfigurálható egy URLSessionConfiguration objektumon keresztül"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "tartalmaz egy URLt, egy cachePolicy-t, timeoutIntervalt, egy URLt, egy pár más beállítást a lekéréshez"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "A JSON formátummal könnyű dolgozni:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "mert beépített egy Codable protokoll ami minden lehetséges típusra már érvényes"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "mert könnyen addelhetünk egy külső APIt ami Codable-vá teszi a létező típusokat"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "A CodingKeys az egy enum ami:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "megad egy sor titkosítási kulcsot ahhoz hogy az adatot biztonságosan tudjuk lementeni"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "lehetővé teszi hogy megfeleltessük a lekért JSONban levő kulcsokat az adatmodellünkben levő kulcsoknak"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "az NSAppTransportSecurity",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "az adatcsomagok titkosításával, enkriptálásával és dekriptálásával foglalkozik"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "lehetővé teszi azt hogy beállítsunk kivételeket, pl olyan site-okat ahonnan http kérés megengedett"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Egy HTTP kérésre adott válasz esetén a 200as status kód:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "egy jó dolog, sikerült a lekérés"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "egy hibajelzés, jelzi azt, hogy nem sikerült elérni a megadott útvonalat"
+                        }
+                    ]
+                }
+                
+            ]
+        }
+    ]
+}

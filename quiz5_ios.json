@@ -1,0 +1,281 @@
+{
+    "title": "Quiz 5 iOS Layout",
+    "description": "Olvassátok el a feladatokat és válasszátok ki a megfelelő választ",
+    "questions": [
+        {
+            "type": "question_group",
+            "name": "igaz_hamis",
+            "pick_count": 5,
+            "question_points": 2,
+            "questions": [
+                {
+                    "question_name": "Question",
+                    "question_text": "A layout",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "parameters-nek hívjuk",
+                            "answer_weight": "0",
+                            "answer_text": "egy terv az app megvalósítására"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "az elemek elrendezését jelenti a képernyőn"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "A külső layout változás az amikor:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "elforgatják a képernyőt vagy pl split screen módba teszik az appet ipaden"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "megváltoztatják a betűméretet (accessibility) vagy átállítják az app nyelvét"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "A belső layout változás az amikor:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "megváltoztatják a betűméretet (accessibility) vagy átállítják az app nyelvét"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "elforgatják a képernyőt vagy pl split screen módba teszik az appet ipaden"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Egy point:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "Egy szubpixel elem, a piros a kék vagy a zöld része a pixelnek"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "Mindig nagyobb mint egy pixel, lehet 1,4 vagy 9 pixel is"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Egy constraint egyenlete a következő:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "elem1.tulajdonság = szorzó * elem2.tulajdonság ^ kitevő + konstans"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "elem1.tulajdonság = szorzó * elem2.tulajdonság + konstans"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "A UIStackView",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "Navigációt valósít meg, mindig lehet poppolni az utolsó viewt a tetejéről"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "Elemeket helyez el egymás mellé egy sorban vagy egy oszlopban"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Egy layoutot fel lehet építeni:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "Programatikusan, Autoresizing-el vagy AutoLayout-al"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "Programatikusan vagy AutoLayout-al"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Ezek a size classek léteznek:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "Small és Large"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "Regular, Compact és Unspecified"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Ugyanazon eszközön:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "Lehetséges Compact size class egy irányba (pl x) és Regular a másik irányba (pl y)"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "Nem lehetséges az hogy két különböző size class létezzen egyszerre"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Autoresizing esetén",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "A child view tud igazodni a parent view-hoz, és a parent is tud igazodni a child-hoz"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "Csak a child view tud igazodni a parent view-hoz, fordítva nem lehetséges"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Autolayout esetén:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "A child view tud igazodni a parent view-hoz, és a parent is tud igazodni a child-hoz"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "Csak a child view tud igazodni a parent view-hoz, fordítva nem lehetséges"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Az autolayout egy algebrai egyenletrendszert határoz meg, amiben:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "Kevesebb feltételt kell megadni mint ahány tulajdonságot be akarunk állítani"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "Ugyanannyi vagy több feltételt kell megadni mint ahány tulajdonságot be akarunk állítani"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Az autolayout lgebrai egyenletrendszere így védi ki azt hogy overconstrained legyen:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "a compiler ellenőrzi azt hogy hány egyenlet van és hibát ad ha túl sok megszorítás van"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "prioritások vannak és a legalacsonyabb prioritású megszorításokat elhagyja"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Mi az amit be kell állítani ahhoz hogy az Autolayout működjön:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "elem.translatesAutoresizingMaskIntoConstraints = false"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "elem.NSLayoutConstraints.activateAutoLayout = true"
+                        }
+                    ]
+                }
+                
+            ]
+        }
+    ]
+}

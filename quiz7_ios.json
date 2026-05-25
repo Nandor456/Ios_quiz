@@ -1,0 +1,281 @@
+{
+    "title": "Quiz 7 iOS Navigáció",
+    "description": "Olvassátok el a feladatokat és válasszátok ki a megfelelő választ",
+    "questions": [
+        {
+            "type": "question_group",
+            "name": "igaz_hamis",
+            "pick_count": 5,
+            "question_points": 2,
+            "questions": [
+                {
+                    "question_name": "Question",
+                    "question_text": "Egy hierarchikus navigációban",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "tetszőleges átmenetek lehetségesek különböző view-k között"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "egy fa szerkezetben tudjuk bejárni a lehetséges view-okat"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Milyen vizuális elemmel segít a UINavigationController abban hogy tudjam hol vagyok a hierarchiában:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "A UINavigationBar-ban mutatja hogy hova tudok visszalépni, milyen nevű view-ra és mutatja a jelenlegi view nevét"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "A UINavigationBar-ban mutatja hogy milyen mélyen vagyok a hierarchiában, hányadik szinten"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Egy storyboardban amikr összekötök két viewt egy átmenettel, ennek a neve az hogy:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "segue (és úgy ejtik ki mint a segway-t)"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "transition"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Egy storyboardban úgy tudunk hozzáadni egy view-hez egy UINavgiationControllert, hogy:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "a + gombbal mint egy elemet hozzáadjuk a jelenlegi view-hez"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "a menüben kiválasztjuk azt hogy Embed in: Navigation Controller"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Milyen új elem jelenik meg egy view-ban attól hogy ő egy Navigation Controllerben van",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "Egy Tab Bar az alján a viewnek"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "egy Navigation Bar a tetején a view-nek"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Milyen új elem jelenik meg egy view-ban attól hogy ő egy Tab Bar Controllerben van",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "egy Navigation Bar a tetején a view-nek"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "egy Tab Bar az alján a viewnek"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Egy storyboardban úgy tudunk hozzáadni egy view-hez egy UITabBarControllert, hogy:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "a menüben kiválasztjuk azt hogy Embed in: Tab Bar Controller"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "a + gombbal mint egy elemet hozzáadjuk a jelenlegi view-hez"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Egy UITabBarController esetén:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "egy fa szerkezetben tudjuk bejárni a lehetséges view-okat"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "egyből át tudunk menni bármelyik view-ról bármelyikre, mert flat hierarchia van"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Egy view életciklusában van egy olyan belépési pont hogy viewDidLoad(). Mire használjuk ezt a pontot?",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "Arra hogy felépítsük a UI-t, hozzáadjuk az elemeket és a köztük levő layoutot"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "Arra hogy megjelenítsünk egy átmeneti animációt mielőtt a view eltűnne"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Egy view életciklusában van egy olyan belépési pont hogy viewWillDisappear(). Mire használjuk ezt a pontot?",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "Arra hogy felépítsük a UI-t, hozzáadjuk az elemeket és a köztük levő layoutot"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "Arra hogy megjelenítsünk egy átmeneti animációt mielőtt a view eltűnne"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Egy storyboardban létrehozott UI elem tulajdonságaira a kódban levő hivatkozást a következő kulcsszó jelzi:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "@IBOutlet"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "@IBAction"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Egy storyboardban létrehozott UI elem eventjére a kódban levő hivatkozást a következő kulcsszó jelzi:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "@IBOutlet"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "@IBAction"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Milyen adatstruktúrában tárolja a view-eket egy UINavigationController? Mi a kötelező ezekre nézve?",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "Egy arrayben. Az hogy legyen beállítva melyik a default."
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "Egy stackben. Az, hogy legyen legalább egy benne."
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Milyen adatstruktúrában tárolja a view-eket egy UITabBarController? Mi a kötelező ezekre nézve?",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "Egy arrayben. Az hogy legyen beállítva melyik a default."
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "Egy stackben. Az, hogy legyen legalább egy benne."
+                        }
+                    ]
+                }
+                
+            ]
+        }
+    ]
+}

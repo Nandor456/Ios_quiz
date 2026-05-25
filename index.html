@@ -76,10 +76,44 @@ h1 {
 <script>
 const app = document.getElementById("app");
 
+let quizzes = [];
 let currentQuiz = null;
 let flattenedQuestions = [];
 let currentQuestionIndex = 0;
 let score = 0;
+
+function getFlattenedQuestions(quiz) {
+    if (!Array.isArray(quiz?.questions)) {
+        return [];
+    }
+
+    return quiz.questions.flatMap(group => {
+        return Array.isArray(group?.questions) ? group.questions : [];
+    });
+}
+
+function showLoadingState() {
+    app.innerHTML = `
+        <div class="card">
+            <h2>Kvizek betöltése...</h2>
+        </div>
+    `;
+}
+
+function showLoadError(error) {
+    const message = window.location.protocol === "file:"
+        ? "A JSON fájlok betöltéséhez indíts egy helyi szervert, ne közvetlenül file:// módban nyisd meg az oldalt."
+        : "Nem sikerült betölteni a kvizeket.";
+
+    console.error(error);
+
+    app.innerHTML = `
+        <div class="card">
+            <h2>Betöltési hiba</h2>
+            <p>${message}</p>
+        </div>
+    `;
+}
 
 function showQuizSelection() {
     app.innerHTML = `
@@ -88,7 +122,7 @@ function showQuizSelection() {
             <div class="quiz-select">
                 ${quizzes.map((q, i) => `
                     <button onclick="startQuiz(${i})">
-                        ${q.title || 'Quiz ' + (i+1)}
+                        ${q.title || 'Quiz ' + (i+1)} (${window.getQuestionCount(q)})
                     </button>
                 `).join('')}
             </div>
@@ -98,15 +132,7 @@ function showQuizSelection() {
 
 function startQuiz(index) {
     currentQuiz = quizzes[index];
-    flattenedQuestions = [];
-
-    currentQuiz.questions.forEach(group => {
-        if(group.questions) {
-            group.questions.forEach(q => {
-                flattenedQuestions.push(q);
-            });
-        }
-    });
+    flattenedQuestions = getFlattenedQuestions(currentQuiz);
 
     currentQuestionIndex = 0;
     score = 0;
@@ -185,7 +211,18 @@ function showResults() {
     `;
 }
 
-showQuizSelection();
+async function initializeApp() {
+    showLoadingState();
+
+    try {
+        quizzes = await window.loadQuizzes();
+        showQuizSelection();
+    } catch (error) {
+        showLoadError(error);
+    }
+}
+
+initializeApp();
 </script>
 </body>
 </html>

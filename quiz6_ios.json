@@ -1,0 +1,281 @@
+{
+    "title": "Quiz 6 iOS TableView",
+    "description": "Olvassátok el a feladatokat és válasszátok ki a megfelelő választ",
+    "questions": [
+        {
+            "type": "question_group",
+            "name": "igaz_hamis",
+            "pick_count": 5,
+            "question_points": 2,
+            "questions": [
+                {
+                    "question_name": "Question",
+                    "question_text": "Az UITableView",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "-ból származtatjuk a UIScrollView-t"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "a UIScrollView-ból van származtatva"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Az UITableView:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "függőleges irányban scrollozható"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "mindkét irányban scrollozható"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "A Settings app:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "a grouped TableView stílust használja"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "a plain TableView stílust használja"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Szeretnék kérni egy újrahasznosított cellát, az adott cella típusában:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "let cell = tableView.dequeueReusableCellWithIdentifier(\"celltype\",forIndexPath: indexPath) as? UITableViewCell"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "let cell = tableView.dequeueReusableCellWithIdentifier(\"celltype\",forIndexPath: indexPath) as! UITableViewCell"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Ha nem sikerül kérjünk egy cellát a dequeueReusableCellWithIdentifier-el",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "ez mindig sikerülni fog, nem lehetséges ilyen"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "akkor instanciálunk mi egyet abban a típusban"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "egy UITableViewDataSource kötelező módon kell implementálja:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "a függvényeket amik visszaadják hogy hány sectionje és hány sora van a TableView-nek illetve visszaadnak egy adott cellát"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "a függvényeket amik visszaadják hogy hány sora van a TableView-nek illetve visszaadnak egy adott cellát"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "A UICollectionView:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "Olyan mint a UITableView csak flexibiis méretű rácsot valósít meg x és y irányba"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "Olyan mint a UITableView csak egy uniform rácsot valósít meg x és y irányba"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Példák olyan appekre amelyek UITableView-el vannak felépítve:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "Settings, Contacts, Photos"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "Alarm oldal a Clock-ban, Instagram, Facebook"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Miért kell regisztrálni a cella típusát?",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "Azért hogy a dequeueReusableCellWithIdentifier-től lehessen olyan típusú cellát kérni"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "Azért hogy a compiler leellenőrizze azt hogy jól definiáltuk-e a cella típust"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "let cell = tableView.dequeueReusableCellWithIdentifier(\"celltype\",forIndexPath: indexPath) as! UITableViewCell",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "compile time-kor ellenőrzi hogy helyes-e a cella típusa"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "crashelheti a programot ha nem regisztráltuk azt a cellatípust"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Az UITableView delegate:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "semmit nem kell kötelező módon implementáljon"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "kötelező módon kell implementálja azt hogy mi történik ha egy sorra tappelünk illetve ha kitöröljük"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Az NSIndexPath",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "1 based azaz egytől indít az első cellának"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "magában foglalja a section és a sor számát is a cellának"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "A custom height-et a sornak:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "a UITableViewDataSource adja meg"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "a UITableViewDelegate adja meg"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Egy UICollectionViewDataSource kötelező módon ezeket kell implementálja:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "collectionView(_:numberOfItemsInSection:) és collectionView(_:cellForItemAt:) függvényeket"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "semmit nem kell kötelezően implementáljon"
+                        }
+                    ]
+                }
+                
+            ]
+        }
+    ]
+}

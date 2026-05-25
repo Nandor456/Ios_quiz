@@ -1,0 +1,281 @@
+{
+    "title": "Quiz 2 iOS",
+    "description": "Olvassátok el a feladatokat és válasszátok ki a megfelelő választ",
+    "questions": [
+        {
+            "type": "question_group",
+            "name": "igaz_hamis",
+            "pick_count": 5,
+            "question_points": 2,
+            "questions": [
+                {
+                    "question_name": "Question",
+                    "question_text": "Amennyiben lehet, a Swift azt javasolja hogy konstansokat használj. Ezek deklarációja a következő kulcsszóval lehetséges:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "const"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "let"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Ha egy conditional unwrappinget végzünk if ... let-el, akkor ",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "egy másik nem conditional típusú konstans megkapja a conditional értékét "
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "az if feltételébe csak az optional változó nevét kell írni"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Egy for ciklusnál Swiftben:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "az elvégzendő utasításokat kötelező kapcsos zárójelek közé tenni"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "az iteratív határokat kötelező kerek zárójelek közé rakni"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Swiftben lehetséges olyan függvény amely egy másik függvényt térít vissza",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "Nem lehetséges, pointert kellene átadni"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "Lehetséges, úgy kell megadni a visszatérítési típust hogy az függvény lesz"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Swift függvények esetén lehetséges olyan bemeneti paraméter amely meghatározatlan számú",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "Igen, bármelyik, csak a megfelelő nevet kell megadni neki"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "Igen, de csak az utolsó paramétere lehet ilyen egy függvénynek"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Ez egy példa az implicit typecastingre:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "var a:Int = 20"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "var a = 20"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Ez egy példa az explicit typecastingre:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "var a:Double = 20"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "var a = 20.0"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "A ?? operátort a következő képpen kell használni:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "a ?? b azt jelenti hogy az a változó felveszi a b értékét ha az nem nil"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "a ?? b visszatéríti az a értékét ha az nem nil, máskülönben a b értékét"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "A while ciklus esetén Swiftben:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "az utasításokat közrefogó kapcsos zárójelek kötelezőek"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "a feltételt közrefogó kerek zárójel kötelező"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Hogy tudja megkülönböztetni a Swift az azonos nevű, de más paraméterekkel meghívott függvényeket?",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "Nem lehet azonos nevű függvénynek más és más implementációja"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "A paraméterek neve alapján"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Hogy tud egy függvény több értéket visszatérteni Swiftben?",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "Tuple-t térít vissza, ebben több változó is lehet"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "muszáj cím szerint hivatkozni rájuk és direkt be kell állítsa az értéküket"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Mit jelent a force unwrapping és mikor használjuk?",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "Amikor át kell alakítani egy tömböt egy lineáris vektorrá"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "Amikor át kell alakítani egy optional változót az értékére"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Egy olyan függvény részletet aminek nincs neve és a jelenlegi kontextust kapja meg, úgy hívjuk hogy:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "Helper function"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "Closure"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Egy Switch esetén Swiftben:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "A switch exhaustive kell legyen tehát le kell fedje az összes lehetőséget"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "Mindig kötelezően kell legyen egy default ág"
+                        }
+                    ]
+                }
+                
+            ]
+        }
+    ]
+}

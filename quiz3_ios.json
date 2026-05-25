@@ -1,0 +1,281 @@
+{
+    "title": "Quiz 3 iOS Swift continued",
+    "description": "Olvassátok el a feladatokat és válasszátok ki a megfelelő választ",
+    "questions": [
+        {
+            "type": "question_group",
+            "name": "igaz_hamis",
+            "pick_count": 5,
+            "question_points": 1,
+            "questions": [
+                {
+                    "question_name": "Question",
+                    "question_text": "Egy osztály változóit",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "parameters-nek hívjuk",
+                            "answer_weight": "0",
+                            "answer_text": "const"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "property-nek hívjuk"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Ha a subclass felülírja a parent class egy metódusát",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "akkor oda kell írni azt a kulcsszót hogy override"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "akkor oda kell írni azt a kulcsszót hogy redefine"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Egy osztály összes paraméterét inicializálni kell",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "deklarációkor, a konstruktorban vagy nil típusúnak kell deklarálni"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "a konstruktorban, kötelező módon"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "A struktúráknak ",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "is kell írni kötelező módon egy init() függvényt"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "létezik egy beépített init függvénye amit nem kell megírni"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Egy osztálynak lehet",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "Több init függvénye, akár több designated init()-je is"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "Több convenience init függvénye, de csak egy designated init() függvénye"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Inicializáláskor ",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "a superclass init()jét kell meghívni először"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "a saját változókat kell beállítani először"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Inicializáláskor ",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "a super.init()-je után kell átállítani az örökölt property-ket"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "a super.init()-je előtt kell átállítani az örökölt property-ket"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "A deinit() akkor hívódik meg amikor",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "egy instanciára való minden hivatkozás törlődik"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "egy instanciára való minden hivatkozás törlődik vagy weak"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Egy osztály konstans property-jének amit let-el definiáltunk",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "az init függvény képes megváltoztatni az értékét, mert az init kivétel"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "az init függvény nem képes megváltoztatni az értékét, mert ez egy konstans"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Egy convenience initializer",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "kötelezően kell inicializáljon minden paramétert"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "kötelezően meg kell hívja a designated initializert"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Melyik függvény hívódik meg akkor amielőtt egy értéket beállítanánk?",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "willSet()"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "willGet()"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Milyen értéket térít vissza egy (rawValue: ) enum initializer",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "az értéknek megfelelő case-t, ha a case kilép az intervallumból akkor az elsőt"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "az értéknek megfelelő case-t optionalként, ha a case kilép az intervallumból akkor nilt"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Rekurzív init() függvények elé oda kell írni azt hogy:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "recursive"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "indirect"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Egy delegált",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "elvégez bizonyos feladatokat és általában kell konformálódjon egy protokollhoz"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "nem lehet optional és nil"
+                        }
+                    ]
+                }
+                
+            ]
+        }
+    ]
+}

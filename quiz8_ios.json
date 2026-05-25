@@ -1,0 +1,281 @@
+{
+    "title": "Quiz 8 iOS Persistence",
+    "description": "Olvassátok el a feladatokat és válasszátok ki a megfelelő választ",
+    "questions": [
+        {
+            "type": "question_group",
+            "name": "igaz_hamis",
+            "pick_count": 5,
+            "question_points": 2,
+            "questions": [
+                {
+                    "question_name": "Question",
+                    "question_text": "A Userdefaults",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "alkalmas sok adat tárolására"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "betöltődik az app indulásakor"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Egy app beállításai(t) az Userdefaultsban",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "be lehet úgy állítani hogy több appon keresztül is megjelenjenek illetve hogy több felhasználónál is ugyanazok legyenek"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "minden egyes letöltött appnél személyesek és csak azon a telefonon és abban az appben érvényesek"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Amikor megváltoznak az Usedefaults-ok",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "erről értesítést tud kapni az app más része is ha fel van iratkozva bizonyos eseményekre"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "a rendszer leellenőrzi hogy helyes kulcsot adtunk meg és nem-e ír felül egy már beállított értéket"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Az Userdefaultsban megadott kulcsokat",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "a compiler leellenőrzi compile time-ban és figyelmeztet a hibás kulcsokra"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "biztonságosabb egy wrapperrel kezelni és konstansként megadni őket hogy legyen valamilyen ellenőrzés compile time-ban"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Az Userdefaults írásakor:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "javasolt az hogy direktbe írjunk a plist állományba ami ezeket tartalmazza"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "jobb a megadott függvényekkel írni mert ezek thread safe függvények"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "A thread safe viselkedés",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "az Userdefaultsban van implementálva, a Keychainben nincs"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "úgy az Userdefaultsban mint a Keychainben implementálva van"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "A Keychain",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "nehezen unit test-elhető"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "egy barátságos API ami könnyen használható wrapperek nélkül"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Titkosított adatokat:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "csak a Keychainbe szabad elmenteni"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "a Keychainbe javasolt elmenteni, kivéve ha nagy méretű adatokról van szó, ekkor a Core Data-ba"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Egy Keychainben már eltárolt password felülírására a",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "SecItemUpdate függvényt javasolt használni"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "SecItemAdd függvényt javasolt használni"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "A canEvaluatePolicy()",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "képes visszatéríteni egy LAPolicy értéket amiből kiolvasható hogy milyen azonosításra képes az eszköz"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "visszaad egy true vagy false értéket annak megfelelően hogy az illető LAPolicy azonosítás használható-e az eszközön"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "A Core Databan",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "az adatokat kell kódoljuk és dekódoljuk a Codable protokoll szerint"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "szintén biztosítva van a thread safe viselkedés"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Az SQLite előnye az hogy",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "egyszerre több helyről is lehet írni az adatbázisunkat és thread safe"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "gyors ás nem igényel külön installálást"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Milyen típusú változók lehetnek Codable típusok?",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "Azok amelyekhez megírjuk a megfelelő függvényeket egy extensionben"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "Minden típus alapból Codable"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Minden hozzáférést olyan eszközhöz ami a privacy-hoz tartozik",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "Be kell írni az info.plist állományba és meg kell indokolni az Apple Store-nak mielőtt kiadjuk az appet"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "alapból beállíthatunk a user megkérdezése nélkül, csak kell jelezzük neki az Control Centerben egy Information Icon-al"
+                        }
+                    ]
+                }
+                
+            ]
+        }
+    ]
+}

@@ -1,0 +1,281 @@
+{
+    "title": "Quiz 10 iOS Architektúra",
+    "description": "Olvassátok el a feladatokat és válasszátok ki a megfelelő választ",
+    "questions": [
+        {
+            "type": "question_group",
+            "name": "igaz_hamis",
+            "pick_count": 5,
+            "question_points": 2,
+            "questions": [
+                {
+                    "question_name": "Question",
+                    "question_text": "Az MVC architektúrában:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "Van egy Model egy Controller és egy View és bármelyik ezek közül tud kommunikálni a többivel"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "Van egy Model és egy View és egy Controller ami összeköti ezeket, ez a központi rész"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "MVC: amikor a Controller változtatást végez a Model-en akkor:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "Update-t végez a Model adatain"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "Notificationt küld a Modellnek ami alapján majd a Modell lekéri a változtatásokat"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "MVC: amikor a Controller változtatást végez a View-en akkor:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "Update-t végez a View komponensein amelyek az új adatoknak megfelelően fognak kinézni"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "Notificationt küld a View-nek ami alapján majd a View lekéri majd a változtatásokat"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "MVC: amikor a View közölni akar információt a Controler-el, akkor:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "Felülírja a Controler-ben a megfelelő adatmezőket az új adatokkal"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "Ez egy User Action, mivel a View ezeket fogadja és továbbítja a Controler-nek hogy egy ilyen input történt"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "MVC: amikor a Model közölni akar egy változást a Controler-el, akkor:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "Felülírja a Controler-ben a megfelelő adatmezőket az új adatokkal"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "Ez egy Notification, értesíti a Controler-t hogy az adat megváltozott"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "MVC: egy telefonkönyv applikációban a View feladata:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "Minden vizuális elem kezelése és a kontakt listában a hozzáadás és a törlés"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "Minden vizuális elem kezelése"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "MVVM: egy telefonkönyv applikációban a ViewModel feladata:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "A kontaktok listájának karbantartása, frissítése, törlése, hozzáádása, illetve a telefonhívások indítása"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "A kontaktok listájához tartozó vizuális elemek karbantartása, frissítése és megjelenítése a képernyőn"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Az MVVMben az MVChez képest:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "elérjük a Controler és a Model jobb szétválasztását"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "elérjük a Controler és a View jobb szétválasztását"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Az MVVMben az MVChez képest:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "könnyebben tesztelhető és újrahasznosítható komponenseket kapunk"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "kevesebb kódot kell írni, kevesebb állomány van és kevesebb boilerplate code"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "MVVM: amikor a ViewModel fel kell frissítse a View-ben levő elemeket",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "Update-t végez a View komponensein amelyek az új adatoknak megfelelően fognak kinézni"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "akkor ezek frissülnek mivel mind Binding-ben vannak azokkal az adattagokkal amelyek őket leírják a ViewModel-ben"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Az MVVMben a business logic:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "a ViewModel-ben van"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "a Model-ben van beépítve"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Az MVVMben a user actionoket:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "a View fogja lekezelni értelmezni és a megfelelő változtatásokat elvégezni"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "a ViewModel fogja értelmezni és a megfelelő változtatásokat elvégezni"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Az MVVM + FlowController ",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "megoldja a Navigáció különválasztását a View-tól"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "megoldja a Navigáció különválasztását a ViewModel-tól"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Az Apple által javasolt architektúra az:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "MVC"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "MVVM + FlowController"
+                        }
+                    ]
+                }
+                
+            ]
+        }
+    ]
+}

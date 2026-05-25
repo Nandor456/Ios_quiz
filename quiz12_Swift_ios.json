@@ -1,0 +1,281 @@
+{
+    "title": "Quiz 11 iOS SwiftUI",
+    "description": "Olvassátok el a feladatokat és válasszátok ki a megfelelő választ",
+    "questions": [
+        {
+            "type": "question_group",
+            "name": "igaz_hamis",
+            "pick_count": 5,
+            "question_points": 2,
+            "questions": [
+                {
+                    "question_name": "Question",
+                    "question_text": "ASwiftUI:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "imperatív"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "deklaratív"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "A SwiftUIban:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "egységesen lehet fejleszteni minden platformra"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "külön kell fejleszteni iOS, ipadOS, watchOS-re"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "SwiftUIban egy külső event így kacsolódik egy Actionhoz:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "egy Publisher azaz értesítést küld arról hogy valami történt"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "egy Mutation-t hajt végre a megfelelő belső state-n"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "SwiftUIban egy Action event így kacsolódik egy State-hez:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "egy Publisher azaz értesítést küld arról hogy valami történt, a State meg figyeli ezeket"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "egy Mutation-t hajt végre a megfelelő belső state-n, mivel own-olja azt"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "SwiftUIban egy State így kacsolódik a View-hez:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "Ez egy Mutation, a State megválzotatja a View állapotát"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "Ez egy Update, amikor a State megváltozik akkor a View tudja hogy Update-olni kell"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Amikor egy Value Type-t akarok, Read Only módban akkor erre a jó megoldás:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "@State"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "Regular Property"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Amikor egy Value Type-t akarok, Read és Write módban akkor erre a jó megoldás:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "hogyha ezt csak helyben használom, akkor @State"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "Regular Property"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Amikor egy Value Type-t akarok, Read és Write módban akkor erre a jó megoldás:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "@Notification mert erre kell figyeljen a belső state"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "ha ezt az értéket kívülről kapom, akkor @Binding"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Amikor egy Object Type-t akarok, és paraméterként kapom meg az objektumban:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "@ObservedObject mert erre kell figyeljen az én objektumom"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "@StateObject mert nem lehet sima @State mivel objektum volt"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Amikor egy Object Type-t akarok, és maga a view hozza ezt létre, akkor erre a jó megoldás:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "@ViewObject"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "@StateObject"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Amikor egy Object Type-t akarok, és az Environmentből kapja meg a View ezt, akkor ez egy:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "@EnvironmentObject"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "@BindingObject"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "SwiftUIban amikor egy új projektet kezdek, akkor deklaráva van:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "egy class ami UIViewController"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "egy struct ami konformálódik a View protocol-hoz"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "SwiftUI-ban a Previewben:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "csak bemutatja azt hogy mit eredményez a kód, Live módban frissítve"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "át lehet állítani Live módból Inspector módba ahol Storyboardhoz hasonlóan lehet a UIt szerkeszteni benne"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Szükséges-e egy ma kezdő iOS fejlesztőnek ismerni a UIKit-et hogyha már létezik a SwiftUI?",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "Ma még igen, mert még nem mindent lehet megoldani SwiftUIban"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "Nem, ez már csak egy legacy módja a UI fejlesztésnek"
+                        }
+                    ]
+                }
+                
+            ]
+        }
+    ]
+}

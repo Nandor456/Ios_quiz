@@ -1,0 +1,205 @@
+{
+    "title": "Quiz 12 iOS Permissions",
+    "description": "Olvassátok el a feladatokat és válasszátok ki a megfelelő választ",
+    "questions": [
+        {
+            "type": "question_group",
+            "name": "igaz_hamis",
+            "pick_count": 5,
+            "question_points": 2,
+            "questions": [
+                {
+                    "question_name": "Question",
+                    "question_text": "Az hogy az engedélyt kérjen az app a protected resurces használatára:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "egy best coding practice"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "egy kötelező lépés amit az iOS fog megtenni az app első ilyen hozzáférés kérésekor"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Ha egyszer megadtunk egy ilyen hozzáférést egy protected resurce-re:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "az app megjegyzi ezt és nem fogja újra kérni"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "minden alkalommal újra kell engedélyezni"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Ha egyszer megadtunk egy ilyen hozzáférést egy protected resurce-re:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "mindig be lehet menni a Settingsbe és vissza lehet vonni ezt az engedélyezést"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "újra kell installálni az appet hogy megváltoztassuk a beállításokat"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Ha egyszer megadtunk egy always on hozzáférést a location-re:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "az app megjegyzi ezt és nem fogja újra kérdezni"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "mivel túl permissive-nek tartja, az iOS erre még rá fog kérdezni egyszer majd"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "A purpose string",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "tudatja a userrel hogy milyen resource-hez kérünk hozzáférést"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "tudatja a userrel hogy miért kérünk hozzáférést a resource-hez és ez által számára mi lesz elérhető"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "A protected resurce hozzáférést:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "automatikusan ellenőrzi az iOS az alapján hogy mit használ az app"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "be kell állítsunk mi egy leírást a Property List állományban"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Ha nincs megadva a purpose string a protected resurce hozzáféréshez:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "futás közben fog crashelni az app"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "Hibát fog adni a compiler"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Amikor egy adott idő után egy notificationt akarok majd küldeni:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "akkor az Apple Push Notification Servicet kell használjam"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "akkor erre használható a local notification is"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "Amikor ki akarok küldeni egy értesítést hogy új termékek érkeztek a webáruházba:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "akkor az Apple Push Notification Servicet kell használjam"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "akkor erre használható a local notification is"
+                        }
+                    ]
+                },
+                {
+                    "question_name": "Question",
+                    "question_text": "A Core location által adott helymeghatározás:",
+                    "question_type": "true_false_question",
+                    "answers": [
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "0",
+                            "answer_text": "Pontosabb kinn a városból ahol jobb a GPS jel"
+                        },
+                        {
+                            "answer_precision": "10",
+                            "numerical_answer_type": "exact_answer",
+                            "answer_weight": "100",
+                            "answer_text": "Pontosabb egy városban ahol több telefontorony, wifi stb van"
+                        }
+                    ]
+                }
+                
+            ]
+        }
+    ]
+}
