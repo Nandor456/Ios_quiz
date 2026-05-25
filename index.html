@@ -75,8 +75,8 @@ h1 {
 <script src="quizzes.js"></script>
 <script>
 const app = document.getElementById("app");
+const quizCollection = Array.isArray(window.quizzes) ? window.quizzes : [];
 
-let quizzes = [];
 let currentQuiz = null;
 let flattenedQuestions = [];
 let currentQuestionIndex = 0;
@@ -92,35 +92,22 @@ function getFlattenedQuestions(quiz) {
     });
 }
 
-function showLoadingState() {
-    app.innerHTML = `
-        <div class="card">
-            <h2>Kvizek betöltése...</h2>
-        </div>
-    `;
-}
-
-function showLoadError(error) {
-    const message = window.location.protocol === "file:"
-        ? "A JSON fájlok betöltéséhez indíts egy helyi szervert, ne közvetlenül file:// módban nyisd meg az oldalt."
-        : "Nem sikerült betölteni a kvizeket.";
-
-    console.error(error);
-
-    app.innerHTML = `
-        <div class="card">
-            <h2>Betöltési hiba</h2>
-            <p>${message}</p>
-        </div>
-    `;
-}
-
 function showQuizSelection() {
+    if (quizCollection.length === 0) {
+        app.innerHTML = `
+            <div class="card">
+                <h2>Nincsenek betöltött kvizek</h2>
+                <p>Futtasd a <code>node generate-quizzes.js</code> parancsot, hogy a JSON fájlokból frissüljön a <code>quizzes.js</code>.</p>
+            </div>
+        `;
+        return;
+    }
+
     app.innerHTML = `
         <div class="card">
             <h2>Válassz egy quizt</h2>
             <div class="quiz-select">
-                ${quizzes.map((q, i) => `
+                ${quizCollection.map((q, i) => `
                     <button onclick="startQuiz(${i})">
                         ${q.title || 'Quiz ' + (i+1)} (${window.getQuestionCount(q)})
                     </button>
@@ -131,7 +118,7 @@ function showQuizSelection() {
 }
 
 function startQuiz(index) {
-    currentQuiz = quizzes[index];
+    currentQuiz = quizCollection[index];
     flattenedQuestions = getFlattenedQuestions(currentQuiz);
 
     currentQuestionIndex = 0;
@@ -211,18 +198,7 @@ function showResults() {
     `;
 }
 
-async function initializeApp() {
-    showLoadingState();
-
-    try {
-        quizzes = await window.loadQuizzes();
-        showQuizSelection();
-    } catch (error) {
-        showLoadError(error);
-    }
-}
-
-initializeApp();
+showQuizSelection();
 </script>
 </body>
 </html>
